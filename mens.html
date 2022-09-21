@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #mens{
+            border: 0px solid red;
+            height: fit-content;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        #mens >div{
+            border: 0px solid;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+            rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+            rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        #mens >div >img{
+            border: 0px solid green;
+            width: 100%;
+            height: 400px;
+        }
+        #mens >div >h2,
+        #mens >div >h5 +div,
+        #mens >div >button{
+            margin: 2px 0px;
+        }
+        #mens >div >h5{
+            border: 0px solid;
+            height: 17px;
+            margin: 2px 0px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .price{
+            border: 0px solid pink;
+            display: flex;
+            justify-content: left;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .price >div{
+            border: 0px solid;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .price >div:nth-child(1){
+            border: 0px solid;
+            display: flex;
+        }
+        .price >div:nth-child(2){
+            border: 0px solid;
+            color: grey;
+            text-decoration: line-through;
+        }
+        .price >div:nth-child(3){
+            color: blue;
+            border: 0px solid;
+        }
+        #mens >div >button{
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+        }
+        #mens >div >button:hover{
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+            rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+            rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+            rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+            rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+            rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+            rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        @media all and (min-width: 450px) and (max-width: 750px){
+            #mens{
+                grid-template-columns: repeat(3,1fr);
+            }
+
+        }
+
+        @media all and (min-width: 20px) and (max-width: 449px){
+            #mens{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="mens">
+        <div>
+            <img src="https://m.media-amazon.com/images/I/411n5QfG5sL._AC_UL320_.jpg" alt="amazon">
+            <h2>As Fashion</h2>
+            <h5>Men's Lycra  Digital Printed</h5>
+            <div class="price">
+                <div>&#8377;<h1>433</h1></div>
+                <div>&#8377;<p>999</p></div>
+                <div>(57% off)</div>
+            </div>
+            <button>Add to card</button>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/81UaD79-LOL._AC_UL320_.jpg" alt="amazon">
+            <h2>ARCHER</h2>
+            <h5>Solid Men Hooded Neck with mask</h5>
+            <div class="price">
+                <div>&#8377;<h1>369</h1></div>
+                <div>&#8377;<p>888</p></div>
+                <div>(58% off)</div>
+            </div>
+            <button>Add to card</button>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/61choxa9ALL._AC_UL320_.jpg" alt="amazon">
+            <h2>JUGULAR</h2>
+            <h5>Men's Cotton Printed Round</h5>
+            <div class="price">
+                <div>&#8377;<h1>320</h1></div>
+                <div>&#8377;<p>888</p></div>
+                <div>(64% off)</div>
+            </div>
+            <button>Add to card</button>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/41ySXF78faL._AC_UL320_.jpg" alt="amazon">
+            <h2>Unbeatable</h2>
+            <h5>Polyester  Men's Sports wear</h5>
+            <div class="price">
+                <div>&#8377;<h1>549</h1></div>
+                <div>&#8377;<p>999</p></div>
+                <div>(45% off)</div>
+            </div>
+            <button>Add to card</button>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/61R11o1DC+S._AC_UL320_.jpg" alt="amazon">
+            <h2>ENDEAVOUR</h2>
+            <h5>Men's Regular Fit Trackpants</h5>
+            <div class="price">
+                <div>&#8377;<h1>599</h1></div>
+                <div>&#8377;<p>999</p></div>
+                <div>(44% off)</div>
+            </div>
+            <button>Add to card</button>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/51zHaCetV9L._AC_UL320_.jpg" alt="amazon">
+            <h2>0-DEGREE</h2>
+            <h5>Men's Running Cotton Shorts</h5>
+            <div class="price">
+                <div>&#8377;<h1>727</h1></div>
+                <div>&#8377;<p>2,999</p></div>
+                <div>(76% off)</div>
+            </div>
+            <button>Add to card</button>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/71u6He6skTS._AC_UL320_.jpg" alt="amazon">
+            <h2>ECO-Pants</h2>
+            <h5>Eco-Friendly Men's Pants</h5>
+            <div class="price">
+                <div>&#8377;<h1>659</h1></div>
+                <div>&#8377;<p>999</p></div>
+                <div>(34% off)</div>
+            </div>
+            <button>Add to card</button>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/718YWtVjqxL._AC_UL320_.jpg" alt="amazon">
+            <h2>Red Tape</h2>
+            <h5>Men's blue plain Jeans</h5>
+            <div class="price">
+                <div>&#8377;<h1>649</h1></div>
+                <div>&#8377;<p>999</p></div>
+                <div>(75% off)</div>
+            </div>
+            <button>Add to card</button>
+        </div>
+    </div>
+</body>
+</html>
